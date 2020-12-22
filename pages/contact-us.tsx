@@ -20,7 +20,7 @@ const ContactUs = () => {
                 <title>Contact Us | Exotic Arunachal</title>
             </Head>
 
-            <Box backgroundColor="blue.300" height="90vh" p={24}>
+            <Box backgroundColor="blue.300" minH={["86vh"]} p={[8, 24]}>
                 <SimpleGrid columns={[1, 2]}>
                     <Box>
                         <Divider width={140} backgroundColor="black" borderColor="black" />
@@ -35,11 +35,11 @@ const ContactUs = () => {
                             <HStack>
                                 <Icon as={FaRegAddressCard} />
                                 <Container>
-                                    Estern Enterprise, 
-                                    Main Baazar, 
+                                    Estern Enterprise,
+                                    Main Baazar,
                                     Tezu, Lohit - District
                                     Arunachal Pradesh, 792001
-                                </Container>    
+                                </Container>
                             </HStack>
                             <HStack mt={2}>
                                 <PhoneIcon />
