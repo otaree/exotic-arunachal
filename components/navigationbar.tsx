@@ -11,6 +11,7 @@ import {
     CloseButton,
     Center,
     VStack,
+    Image
 } from '@chakra-ui/react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { motion } from 'framer-motion';
@@ -138,16 +139,13 @@ const NavigationBar = () => {
                 </CenterButton>
             </MotionBox>
             <Flex justifyContent="space-between" alignItems="center" p={2} display={["flex", "none"]} borderBottomWidth={1}>
-                <Box>
-                    <Text as="span" padding={2} >
-                        <Text as="span" color="gray.600" fontStyle="italic" fontWeight="normal">
-                            Exotic
-                    </Text>
-                        <Text as="span" color="gray.800" fontWeight="bold">
-                            Arunachal
-                    </Text>
-                    </Text>
-                </Box>
+                <Image
+                    boxSize="46px"
+                    objectFit="cover"
+                    src="/logo.png"
+                    alt="Segun Adebayo"
+                    ml={4}
+                />
                 <IconButton
                     icon={<GiHamburgerMenu />}
                     aria-label=""
@@ -158,16 +156,13 @@ const NavigationBar = () => {
             </Flex>
             <Flex justifyContent="center" alignItems="center" py={2} display={["none", "block"]} borderBottomWidth={1}>
                 <Flex justifyContent="space-between" alignItems="center" width="96%">
-                    <Box width="100%">
-                        <Text as="span" padding={2} >
-                            <Text as="span" color="gray.600" fontStyle="italic" fontWeight="normal">
-                                Exotic
-                            </Text>
-                            <Text as="span" color="gray.800" fontWeight="bold">
-                                Arunachal
-                            </Text>
-                        </Text>
-                    </Box>
+                    <Image
+                        boxSize="60px"
+                        objectFit="cover"
+                        src="/logo.png"
+                        alt="Segun Adebayo"
+                        ml={4}
+                    />
                     <HStack spacing={6}>
                         <Link href="/">
                             <Button as="a" _hover={{ cursor: 'pointer', textDecor: 'underline' }} colorScheme="blue" variant="link">HOME</Button>

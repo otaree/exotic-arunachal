@@ -44,13 +44,13 @@ const ContactUs = () => {
                             <HStack mt={2}>
                                 <PhoneIcon />
                                 <Container>
-                                    <Text>9612751698</Text>
+                                    <Text>8794051909</Text>
                                 </Container>
                             </HStack>
                             <HStack mt={2}>
                                 <EmailIcon />
                                 <Container>
-                                    <Text>example@example.com</Text>
+                                    <Text>smartlohit2020@gmail.com</Text>
                                 </Container>
                             </HStack>
                         </Box>

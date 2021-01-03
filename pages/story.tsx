@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Box, Flex, Container, Heading, Text, SimpleGrid, Center, useMediaQuery } from '@chakra-ui/react'
+import { Box, Container, Heading, Text, Center, Img, useMediaQuery } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 
 
@@ -19,7 +18,84 @@ const Story = () => {
             <Head>
                 <title>Story | Exotic Arunachal</title>
             </Head>
-            <Box height={["76vh", "66vh"]} position="relative">
+            <Box>
+                <Box pos="relative">
+                    <Img
+                        src="/images/new_brand.png"
+                        width="100%"
+                        height={["76vh", "76vh"]}
+                        objectFit="fill"
+                    />
+                    <MotionCenter
+                        display={["none", "flex"]}
+                        rounded="full"
+                        backgroundColor="white"
+                        shadow="md"
+                        pos="absolute"
+                        bottom={- 150 / 2}
+                        right={25}
+                        height={150}
+                        width={150}
+                        initial={{
+                            y: 50,
+                            opacity: 0
+                        }}
+                        animate={{
+                            y: 0,
+                            opacity: 1
+                        }}
+                        transition={{
+                            delay: 2
+                        }}
+                    >
+                        <Img
+                            boxSize="100px"
+                            objectFit="cover"
+                            src="/logo.png"
+                            alt="Exotic Arunachal Logo"
+                            ml={4}
+                        />
+                    </MotionCenter>
+                </Box>
+                <Heading as="h1" textAlign="center" textTransform="uppercase" color="blue.500" mt={8} mb={4}>Brand Story</Heading>
+                <Container maxW="4xl" mb={8}>
+                    <Text color="gray.800" fontFamily="cursive" fontSize="xl">
+                        We often speak about feminism and gender equality these days, but when
+                        it comes to the implementation, we see not more than handful of business
+                        models that are managed and operated by independent rural women.
+                    </Text>
+                    <Text color="gray.800" fontFamily="cursive" fontSize="xl" my={2}>
+                        The owner of Exotic Arunachal, Mrs. Rupailu Manyu, is a member of self-
+                        help group named Queen, and has became a live example to practice the
+                        famous preaching- “Be the change you want to see in the world”. Exotic
+                        Arunachal empowers Mrs. Manyu to help women and underprivileged
+                        people like her to stand on their own feet and make a change in the
+                        society.
+                    </Text>
+                    <Text color="gray.800" fontFamily="cursive" fontSize="xl">
+                        Before the launch of this venture, she was rearing piggery & chicken and
+                        had a vegetable farm for family contentment. Also, she did not receive any
+                        formal education and has been a housewife all her life. But that didn’t stop
+                        her from spreading her wings and contributing to the society when the right
+                        time came and Varun, a social entrepreneur, introduced her to the idea of
+                        solar drying techniques and how it could help farmers of her state.
+                    </Text>
+                    <Text color="gray.800" fontFamily="cursive" fontSize="xl" my={2}>
+                        In a country like India, a farmer is called ANNADATA-The one who feeds,
+                        but a sad truth is that the one who feeds us all, sleeps empty stomach most
+                        of the nights. The brand’s goal is to empower the farmers, especially
+                        women, of Arunachal Pradesh, so that they don't have to give up on their
+                        love for farming because of the income and other related factors.
+                    </Text>
+                    <Text color="gray.800" fontFamily="cursive" fontSize="xl">
+                        The brand strives so that the whole of India can get the authenticity and
+                        purity in flavors that our motherland has to provide and all the "exotic" fruits
+                        grown here can reach different parts of the country without getting
+                        compromised in their nutrition values and health benefits.
+                    </Text>
+                </Container>
+            </Box>
+            {/* <Box height={["76vh", "66vh"]} position="relative">
                 {
                     isLargerThan460 ?
                         (
@@ -38,9 +114,9 @@ const Story = () => {
                         )
                 }
                 <MotionCenter
-                    display={isLargerThan460 ? "flex": "none"}
+                    display={isLargerThan460 ? "flex" : "none"}
                     rounded="full"
-                    backgroundColor="blue.500"
+                    backgroundColor="white"
                     shadow="md"
                     pos="absolute"
                     bottom={- 150 / 2}
@@ -59,14 +135,13 @@ const Story = () => {
                         delay: 2
                     }}
                 >
-                    <Text as="span" padding={2} >
-                        <Text as="span" color="gray.50" fontStyle="italic" fontWeight="normal">
-                            Exotic
-                            </Text>
-                        <Text as="span" color="gray.200" fontWeight="bold">
-                            Arunachal
-                            </Text>
-                    </Text>
+                    <Img
+                        boxSize="100px"
+                        objectFit="cover"
+                        src="/logo.png"
+                        alt="Segun Adebayo"
+                        ml={4}
+                    />
                 </MotionCenter>
             </Box>
             <Heading as="h1" textAlign="center" textTransform="uppercase" color="blue.500" mt={8} mb={4}>Brand Story</Heading>
@@ -106,7 +181,7 @@ const Story = () => {
                     brand goes for the empowerment of underprivileged farmers and to support
                     independent business women.
                              </Text>
-            </Container>
+            </Container> */}
         </Layout>
     )
 }

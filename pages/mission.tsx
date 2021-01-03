@@ -17,7 +17,7 @@ const Mission = () => (
         <MyContainer>
             <Heading as="h1" size="xl" textTransform="uppercase" color="blue.500" mb={[4, 8]}>MISSION</Heading>
             <Text fontFamily="sans-serif" fontSize="xl">
-                Founder of Exotic Arunachal, Mr. Johokso Manyu is on a mission against
+                Founder of Exotic Arunachal, Mrs. Rupailu Manyu, is on a mission against
                 package products that are filled with additives and preservatives. Exotic
                 Arunachal offers solar dried fruits like Kiwi, Pineapple, Bananas etc and are
                 soon to launch natural series of jams and marmalades which will be directly
@@ -55,7 +55,9 @@ const Mission = () => (
                 should we not, so here we make sure to provide employment opportunities
                 to the local residents of Arunachal Pradesh and also to help the local
                 farmers as they are the ones who products the nurture their harvest with so
-                much of love and care.
+                much of love and care. Also, since the company is owned by a woman, it
+                gives a ray of hope and strength to the other women of the state and sends
+                a message of female empowerment the society.
             </Text>
 
             <Heading as="h2" size="lg" textTransform="uppercase" color="blue.500" mt={[4, 8]} mb={[2, 4]}>ECONOMIC IMPACT</Heading>
