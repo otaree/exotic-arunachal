@@ -35,9 +35,9 @@ const ContactUs = () => {
                             <HStack>
                                 <Icon as={FaRegAddressCard} />
                                 <Container>
-                                    Estern Enterprise,
-                                    Main Baazar,
-                                    Tezu, Lohit - District
+                                   Cooperative complex, 
+                                   Below 1mb, 
+                                   Tezu, Lohit - District
                                     Arunachal Pradesh, 792001
                                 </Container>
                             </HStack>
